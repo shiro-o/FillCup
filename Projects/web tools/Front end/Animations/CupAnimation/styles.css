@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+
+.cup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 180px;
+    border: 6px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url(imageedit_5_3564553059.png);
+    background-repeat: repeat-x;
+    animation: animate-x 3s linear infinite, animate-y 10s linear infinite;
+    box-shadow: 0 20px 35px rgba(0,0,0,1);
+}
+
+.cup:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    border: 6px solid white;
+    right: -62px;
+    top: 30px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+
+@keyframes animate-x {
+    0%{
+        background-position-x: 0px;
+    }
+    10%{
+        background-position-x: 150px;
+    }
+    20%{
+        background-position-x: 300px;
+    }
+    30%{
+        background-position-x: 450px;
+    }
+    40%{
+        background-position-x: 600px;
+    }
+    50%{
+        background-position-x: 750px;
+    }
+    60%{
+        background-position-x: 900px;
+    }
+    70%{
+        background-position-x: 1050px;
+    }
+    80%{
+        background-position-x: 1200px;
+    }
+    90%{
+        background-position-x: 1350px;
+    }
+    100%{
+        background-position-x: 1500px;
+    }
+}
+@keyframes animate-y {
+    0%{
+        background-position-y: 220px;
+    }
+    50%{
+        background-position-y: -80px;
+    }
+    100%{
+        background-position-y: 220px;
+    }
+}
